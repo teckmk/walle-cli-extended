@@ -1,0 +1,8 @@
+1- install plugin
+2- uninstall plugin
+3- use local config file if it exists
+4- list plugins (--local, --global or --all)
+5- global install plugin (--global, -g)
+6- global uninstall plugin
+7- modify global config file
+8- global plugin install directory

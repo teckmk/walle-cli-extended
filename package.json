@@ -1,0 +1,25 @@
+{
+    "name": "walle",
+    "version": "1.0.0",
+    "description": "",
+    "main": "./bin/index.js",
+    "scripts": {
+        "test-install": "npm install -g ."
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "commander": "^9.3.0"
+    },
+    "bin": {
+        "walle": "./bin/index.js"
+    },
+    "devDependencies": {
+        "eslint": "^8.16.0",
+        "eslint-config-standard": "^17.0.0",
+        "eslint-plugin-import": "^2.26.0",
+        "eslint-plugin-n": "^15.2.0",
+        "eslint-plugin-promise": "^6.0.0"
+    }
+}
