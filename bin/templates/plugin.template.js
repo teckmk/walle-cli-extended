@@ -4,6 +4,7 @@ const plugin = {
     name: '${name}',
     description: '${description}',
     version: '0.0.1',
+    cliVersion: '^1.0.0'
 }
 
 plugin.config = {    
