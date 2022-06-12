@@ -148,7 +148,7 @@ walle uninstall --file ./my-plugin.js
 
 ```
 
-### Plugins
+## Plugins
 
 Every walle plugin is an object with the following properties:
 
