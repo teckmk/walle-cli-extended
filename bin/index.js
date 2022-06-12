@@ -26,7 +26,7 @@ walleCLI
     })
 
 walleCLI
-    .command('install <pluginPath>')
+    .command('add <pluginPath>')
     .option('--file', 'Installs plugin from file')
     .description('Installs plugin')
     .action((pluginPath, options) => {
@@ -38,7 +38,7 @@ walleCLI
     })
 
 walleCLI
-    .command('uninstall <pluginName>')
+    .command('remove <pluginName>')
     .description('Uninstalls plugin')
     .action(pluginName => {
         configProvider.uninstallPlugin(pluginName)
