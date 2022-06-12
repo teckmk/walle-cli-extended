@@ -33,7 +33,7 @@ npm install walle-cli -g
 # or
 yarn global add walle-cli
 # or with latest npm
-npm install walle-cli location=global
+npm install walle-cli --location=global
 ```
 
 Then open a new terminal in directory where you want to create your plugin.
