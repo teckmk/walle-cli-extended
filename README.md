@@ -123,14 +123,14 @@ Installing a plugin:
 
 ```bash
 # if you have installed a plugin from npm, want to use it with walle, do:
-walle install <plugin-name>
-# Note: `walle install` won't download anything.
+walle add <plugin-name>
+# Note: `walle add` won't download anything.
 
 # if you have created a plugin locally, using `walle plugin`, use:
-walle install --file <plugin-path>
+walle add --file <plugin-path>
 
 #e.g.
-walle install --file ./my-plugin.js
+walle add --file ./my-plugin.js
 
 ```
 
@@ -138,14 +138,20 @@ Uninstalling a plugin:
 
 ```bash
 # if you have installed a plugin from npm
-walle uninstall <plugin-name>
+walle remove <plugin-name>
 
 # if you have created a plugin locally, using `walle plugin`, use:
-walle uninstall --file <plugin-path>
+walle remove --file <plugin-path>
 
 #e.g.
-walle uninstall --file ./my-plugin.js
+walle remove --file ./my-plugin.js
 
+```
+
+Listing all installed plugins:
+
+```bash
+walle list
 ```
 
 ## Plugins
