@@ -1,13 +1,15 @@
-1- install plugin
-2- uninstall plugin
-3- use local config file if it exists
-4- list plugins (--local, --global or --all)
-5- global install plugin (--global, -g)
-6- global uninstall plugin
-7- modify global config file
-8- global plugin install directory
-9- if local config is found for a plugin, use that else   use global config
-10- local plugins can't have global configs
+ 1- install plugin
+ 2- remove plugin
+ 3- use local config file if it exists
+ 4- list plugins (--local, --global or --all)
+ 5- global install plugin (--global, -g)
+ 6- add plugin local (--local, -l) or global (--global, -g)
+ 7- modify global config file
+ 8- global plugin install directory
+ 9- if local config is found for a plugin, use that else   use global config
+10- local plugins can't have global configs.
+11- local plugins should be `required` right from its location
+    doing this will make it possible to use local dependencies in the plugin
 
 
 * global plugins can be used anywhere

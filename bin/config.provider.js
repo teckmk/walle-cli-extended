@@ -36,6 +36,7 @@ configProvider.saveConfig = function (config) {
 configProvider.installPlugin = function (pluginPath) {
     const config = configProvider.getConfig()
     if (config.plugins.includes(pluginPath)) {
+        // run update plugin here
         return
     }
 
@@ -122,8 +123,9 @@ configProvider.loadPlugins = function (cli) {
     config.plugins.forEach(p => {
         const plugin = require(p)
         const pluginCommands = plugin.make(config.options[plugin.name]).commands
-        const pluginProgram = cli.command(plugin.name)
-        pluginProgram.description(plugin.description || 'No description')
+        const pluginProgram = cli
+            .command(plugin.name)
+            .description(plugin.description || 'No description')
 
         pluginCommands.forEach(c => {
             const pluginCommand = pluginProgram
